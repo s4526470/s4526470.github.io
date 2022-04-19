@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dechao Zhang</title>
+    <link href="./css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous">
+    </script>
+
+    <!-- Freely switch the landing page and portfolio page -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.switch').click(function(e){
+                e.preventDefault();
+                $('#landing-page').toggleClass('move');
+                $('#main-container').toggleClass('move');
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+    <!-- landing page -->
+    <article id="landing-page" class="landing-page">
+        <div class="welcome">
+            <h1>Hello, I am Dechao ZHANG</h1>
+            <p>Information Technology student of UQ, Welcome to my portfolio</p>
+            <a href="#main-container" class="switch">Get Start It</a>
+        </div>
+    </article>
+
+    <!-- individual portfolio page -->
+    <article id="main-container" class="main-container">
+
+        <!-- The content of About me -->
+        <div class="display first-content" id="first-content">
+            <div class="top-bar">
+                <div class="about-me-tab">
+                    <span>About Me</span>
+                </div>
+                <button class="close-btn" onclick="firstCancelPopUp()">
+                    X
+                </button>
+            </div>
+            <div class="displayed-content">
+                <div class="profile">
+                    <div class="photo"></div>
+                </div>
+                <div class="information">
+                    <div class="basic-info">
+                        Hello, I am Dechao ZHANG. I have been Australian about two years and I
+                        am majoring in the Information Technology at the University of Queensland. 
+                        I very like watching action movie and tasting japanese food. <br><br>
+                        During the peroid of the postgraduate study at University of Queensland, I have
+                        learned some knowledge about the Python, Java, PHP and SQL Database. Besides, 
+                        I also have some experience of the full-stack development and human centred design.
+                        <br><br>
+                        Here is my skill proficiency,
+                        if you have some problems of the web development, feel free to 
+                        <a href="mailto:zdc463956923@gmail.com">contact me!</a>
+                    </div>
+                    <div class="skills">
+                        <div class="skills-left">
+                            <div class="web-development">
+                            <span>Web Development</span>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            </div>
+                            <div class="python">
+                                <span>Python</span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="java">
+                                <span>Java</span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                        </div>
+                        <div class="skills-right">
+                            <div class="php">
+                                <span>PHP</span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="sql">
+                                <span>MySQL</span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="cloud">
+                                <span>Cloud Services</span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The content of Documentation and Assessment -->
+        <div class="display second-content" id="second-content">
+            <div class="top-bar">
+                <div class="assessment-tab">
+                    <span class="a-tab a-active" id="a-tab1">Design Exploration</span>
+                    <span class="a-tab" id="a-tab2">Major Project</span>
+                    <span class="a-tab" id="a-tab4">Portfolio</span>
+                </div>
+                <button class="close-btn" onclick="secondCancelPopUp()">
+                    X
+                </button>
+            </div>
+
+            <!-- The Content of Design exploration -->
+            <div class="exploration displayed-content" id="exploration">
+                <div class="exploration-words">
+                    <h1 class="exploration-title">
+                        Design Exploration
+                    </h1>
+                    <div class="exploration-content">
+                        
+                        <div class="exploration-des">
+                            <h2>My Work</h2>
+                            For my poster, I very wanted to design a product for the parents who can better protect their children. The reason why I selected this topic was that according to lots of background research such as child death report and the dataset of child deaths case review from Queensland Open Data Portal, I found that most of the common causes of child death were the neglection of parents. Besides, many children in Australia were dead because of some avoidable accidents, which means that if the parents understand more knowledge to protect their children, these children can totally avoid the dangers. Finally, I put the related personas, storyboard and rough prototype in the poster and made the simple rehearsal for my poster presentation.
+                        </div>
+                        <a href="https://drive.google.com/file/d/1Wuz2YSstX3c7dxHHQa86QdVWSGrzjMVy/view?usp=sharing" target="blank"><img src="./images/poster.png" alt="" width="360" class="exploration-img"></a>
+                    </div>
+                    <div class="exploration-reflection">
+                        <h2>Reflection</h2>
+                        From the feedback of the tutors and students, they said that my poster did not have graphically rich content. I considered that I only expressed my idea in the poster with the plain text instead of combining the graphical content and text content. Therefore, from my second journal, I reflected that the audience may prefer short text description with some vivid visual content and in the future, I will concentrate on expressing my idea creatively by using the text content and related images.
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Content of Major project -->
+            <div class="project displayed-content" id="project">
+                <div class="project-words">
+                    <h1 class="project-title">
+                        Major Project
+                    </h1>
+                    <div class="partA-content">
+                        <div class="partA-des">
+                            <h2>Part A</h2>
+                            In part A, I was allocated to complete the two parts of the report. The first part was the design propose and the other part was the persona. 
+                            <br><br>
+                            For the design propose, I firstly figured out what were our goals and what benefits can we bring to the potential users according to our product. After the team discussion, I decided that we can have three different design proposes (Protection, Exploration and Education) for the target audience. Protection means that users can know which sea areas in Queensland are dangerous and then avoid them before the sea sport from our website. Exploration helps users explore different marine creatures and the Education means that users can learn some knowledge about the marine creatures.
+                            <br><br>
+                            For the persona part, I thought the people who liked going to the beach would be our target audience. About the age scope of the target audience, I originally considered that the scope was from 18 years old to 50 years old. However, after did some background research and adopt some suggestions from the team members. I expanded the age scope upper to 70 years old. This is because we found that the aged also had the passion for going to the beach to relax. 
+                            <br><br>
+                            <div class="partA-img-box" style="text-align:center;">
+                                <img src="./images/purpose.png" alt="" height="360" class="purpose-img">
+                                <img src="./images/persona.png" alt="" height="360" class="persona-img">
+                            </div>
+                            <br>
+                        </div>
+                        <div class="partA-reflection">
+                            <h2>Part A Reflection</h2>
+                            From the design propose part, my reflection was that a good design should meet the users’ needs and bring the benefits such as educational content or relaxed content to the users at the same time. 
+                            From the persona part, I want to reflect that I cannot just follow my ideas, I should do more research and communicate with the team members more to get the persona that was closest to the actual users. 
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class="partB-content">
+                        <div class="partB-des">
+                            <h2>Part B</h2>
+                            In part B, I was mainly responsible for the functionality implementation of our website. Firstly, I concentrated on the character movement by using the JavaScript Events function. I used the JavaScript to bind the keyboard event, which can let users press the “Up”, “Down”, “Left”, “Right” key to control the character movement in four directions from our website. 
+                            <br><br>
+                            <div class="partB-img-box" style="text-align:center;">
+                                <img src="./images/character-move.gif" alt="" height="330" class="purpose-img">
+                            </div>
+                            <br><br>
+                            Besides, I also implement the loading spinner for improving the users’ experience when they want to see some high-quality marine creatures’ images in our website. 
+                            <br><br>
+                            <div class="partB-img-box" style="text-align:center;">
+                                <img src="./images/loading-spinner.gif" alt="" height="330" class="purpose-img">
+                            </div>
+                            <br><br>
+                            Finally, I also implemented the fish movement animation and used the JavaScript mouse click event to help the users know related information after users click the specific fish.
+                            <br><br> 
+                            <div class="partB-img-box" style="text-align:center;">
+                                <img src="./images/animal-movement.gif" alt="" height="330" class="purpose-img">
+                                <img src="./images/animal-popup.png" alt="" height="330" class="purpose-img">
+                            </div>
+                            <br><br>
+                            Additionally, I also helped the presenters to prepare the MVP presentation. I was in charge of timing and gave some suggestions to make the presenters express as much content as possible within 5 minutes.
+                            <br><br>
+                        </div>
+                        <div class="partB-reflection">
+                            <h2>Part B Reflection</h2>
+                            For the implementation part, after the functionality testing from my team members, they found that when they keep pressing the “Down” key on the keyboard, the character will not stop and the outer div box will also be stretched continuously. This is because I forget to set the limitation for the character, which means that the character can move infinitely if the users do not release the key. From this feedback, I reflect that I should be more careful and consider more boundary conditions during the function development.
+                            <br><br>
+                            After the MVP presentation, the main feedback of the tutors and students was that our speed of speech was too fast although we could express all our ideas within limited time. I considered it was my fault because I always wanted my team members to present all the work that we have done, which means that the presenter needed to speed up during the presentation. Now, I reflect that the speaker only needs to express some key ideas during the presentation instead of all ideas. Besides, if we also can leave 1 to 2 seconds as the thinking time of audience after each part of the presentation, the users may have better experience.
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class="partC-content">
+                        <div class="partC-des">
+                            <h2>Part C</h2>
+                            In part C, for the website development, I implemented the weather forecast function for the website by retrieving the next 7 days weather of Brisbane from the OpenWeather API and then display it in the home page. I used the jQuery AJAX method to help the users know the future weather without reloading the web page.  
+                            <br><br>
+                            <div class="partC-img-box" style="text-align:center;">
+                                <img src="./images/weather.gif" alt="" height="330" class="purpose-img">
+                            </div>
+                            <br><br>
+                            To make our website more vivid, I also implemented the word dancing function for the landing page by using the JavaScript “setTimeout()” and “setInterval()” function. 
+                            <br><br>
+                            <div class="partC-img-box" style="text-align:center;">
+                                <img src="./images/word-dancing.gif" alt="" height="330" class="purpose-img">
+                            </div>
+                            <br><br>
+                            In addition, for the final report, I completed the Reflection Part (Improvements and Unable Finish part) based on the final users testing. I collect the negative feedback from the potential users during the website evaluation and then discussed with my teammates to make the future improvement plan. 
+                            <br><br> 
+                            <div class="partC-img-box" style="text-align:center;">
+                                <img src="./images/improvement.png" alt="" height="360" class="purpose-img">
+                                <img src="./images/unable.png" alt="" height="360" class="purpose-img">
+                            </div>
+                            <br><br>
+                            Finally, I actively participated in the rehearsal of the EXPO and put forward many useful suggestions for better displaying our product in the tradeshow.
+                            <br><br>
+                        </div>
+                        <div class="partC-reflection">
+                            <h2>Part C Reflection</h2>
+                            For the word dancing function, I reflected that if we want to show the plain text such as website introduction to the users in our website, the users may be unwilling to look through the whole paragraph. Some users even skip the text. Therefore, we can change the presenting style of the word content to arise the users’ interest. For example, we can make the word of text jump out one by one to attract the users’ attention.
+                            <br><br>
+                            According to the users testing, I clearly knew the shortcomings of our website and how to better improve them. Therefore, I reflected that the user testing was very important in the design process, mainly because it can help the developers and designers quickly find out the downsides of the product and make related improvement.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The content of portoflio -->
+            <div class="portfolio displayed-content" id="portfolio">
+                <div class="portfolio-words">
+                    <h1 class="portfolio-title">
+                        Portfolio
+                    </h1>
+                    <div class="portfolio-content">
+                        <div class="portfolio-des">
+                            <h2>My Work</h2>
+                            For the individual portfolio, before the website implementation, I firstly listed all the elements and content on the Miro board, mainly because we only have a single page to display the contributions of ourselves and related reflection in this semester. Making a simple sketch in advance is a useful method to help me understand how to design my individual portfolio website and what the content should be displayed. Finally, I decided that I had four parts to display the audience, which includes a personal introduction, assessment reflection, course reflection and the supplementary explanation part.
+                        </div>
+                        <a href="https://miro.com/app/board/o9J_lfPWsUY=/" target="blank"><img src="./images/portfolio.png" alt="" width="360" class="portfolio-img"></a>
+                    </div>
+                    <div class="portfolio-reflection">
+                        <h2>Reflection</h2>
+                        After completed the text content of the individual portfolio, I understood my contributions throughout the semester and what I learned in this course. In addition, while constructing the layout of my portfolio website, my understanding of HTML and CSS has deepened. I consider the individual portfolio can be regarded as proof for my ability after a semester of hard work. It also tells me what benefits I have gained in this semester and what disadvantages I have.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The content of the Course Reflection -->
+        <div class="display third-content" id="third-content">
+            <div class="top-bar">
+                <div class="course-tab">
+                    <span class="c-tab c-active" id="c-tab1">Meeting Expectation</span>
+                    <span class="c-tab" id="c-tab2">Learning From The Course</span>
+                    <span class="c-tab" id="c-tab3">Change To Improve</span>
+                </div>
+                <button class="close-btn" onclick="thirdCancelPopUp()">
+                    X
+                </button>
+            </div>
+
+            <!-- The content of the Meeting Expectation -->
+            <div class="expection displayed-content" id="expection">
+                <div class="expection-words">
+                    <h1 class="expection-title">Meeting Expectation</h1>
+                    I considered I could achieve three main goals when I selected this course. 
+                    The first one was that I could clearly understand the process of the interaction 
+                    Design lifecycle. The second goal was that I hoped I could improve the skills of 
+                    the teamwork, such as the communication skill and speech ability. This is because 
+                    I was very shy person and I was afraid of expressing my ideas. Finally, I expected that 
+                    my coding skills about the web development also could be obviously improved.
+                    <br><br><br>
+                    <h2>First Expectation</h2>
+                    For the first goal, in the week 4 lecture, I have learned some knowledge and methodologies
+                    of the interactive design. I knew that when we want to design a good product, we cannot only follow the idea of the designers or developers, mainly because there always exists a gap between the designers/developers and the actual users. Therefore, before the functionality implementation, we should understand and observe what the users' actual need. Then, we can visualize our design concept according to the prototype. For verifying our design concept, we also should have user testing or evaluation to refine the concept. Finally, if we get a good evaluation feedback from the patient users, the process of the implementation will start, but if not, we still should repeat the design iteration.
+                    <br><br><br>
+                    <h2>Second Expectation</h2>
+                    For the second goal, from the contact studio of this course, I actively participated in each team discussion and tried to express my ideas. Although some ideas that I put forward were a little bit naive, my team members and tutors still were willing to listen. Therefore, I felt that I got more experience with team communication and teamwork after this course.
+                    <br><br><br>
+                    <h2>Third Expectation</h2>
+                    About the final expectation of this course, I have learned much knowledge about the AJAX, API, PHP in the workshop and applied these skills in our group assignment. It made me feel more confident and I considered that I can still use these useful skills in the future course. However, I still felt confused about how to connect to the database using PHP and how to display the content of the database in the front-end side, which let me be difficult to implement some specific functions in our website.
+                </div>
+            </div>
+
+            <!-- The content of the Learning Across The Course -->
+            <div class="learning displayed-content" id="learning">
+                <div class="learning-words">
+                    <h1 class="learning-title">Learning From The Course</h1>
+                    <h2>Design Tools</h2>
+                    From the workshop of this course, I have learned many useful softwares to make our design look more beautiful and vivid. For example, I studied how to use the inVison to create the high-fidelity prototype. Besides, if we want to deal with or resize some images, we can use the PS or AI software skills from this course to meet our requirements.
+                    <br><br><br>
+                    <h2>Speech Skills</h2>
+                    From the contact studio of this course, we have three public presentations which include one individual presentation and two team presentation. From my individual presentation about the poster, I knew how to catch the audience attention by emphasizing some interesting points. In addition, from the feedback of our team presentation, I knew how to reasonably allocate the time for each part of the presentation content and control the speaking speed to control the progress of the presentation. 
+                </div>
+            </div>
+
+            <!-- The content of the Change Of Improve -->
+            <div class="improve displayed-content" id="improve">
+                <div class="improve-words">
+                    <h1 class="improve-title">Change To Improve</h1>
+                    <h2>For the second journal</h2>
+                    According to the feedback of my second journal, it said I should have more discussion about my emotions and have more analysis as to what some alternative outcomes could further develop my reflection in the future. Therefore, I consider what I need to change is that I should concentrate more on the analysis of my previous performance and then figured out more feasible methods to improve the performance in the next design iteration. 
+                    <br><br><br>
+                    <h2>For the team project</h2>
+                    Although we have completed most of the functions of our website, I still considered that we can do much better. For example, due to the time limitation, some tiny CSS styling problems still exist on our website. If we have much time, we can make some improvements to our website to look more comfortable. Besides, the efficiency of the team discussion also should be improved. This is because sometimes during the team discussion, we still cannot help to talk about somethings which are totally not related to the work such as long time chit-chat. 
+                </div>
+            </div>
+        </div>
+
+        <!-- The content of the Other Work -->
+        <div class="display forth-content" id="forth-content">
+            <div class="top-bar">
+                <div class="other-work-tab">
+                    <span>Other Work</span>
+                </div>
+                <button class="close-btn" onclick="forthCancelPopUp()">
+                    X
+                </button>
+            </div>
+
+            <!-- The content of the Design Inspiration -->
+            <div class="other displayed-content">
+                <div class="other-words">
+                    <h1 class="other-title">Design Inspiration</h1>
+                    For the design of my individual portfolio, I have looked through many excellent design elements from the internet and obtained some design inspirations based on these design elements. Now, I will list these wonderful design elements I have referenced below.  
+                    <br><br><br>
+                    <h2>Pop-up Window</h2>
+                    For the style of the pop-up window of this website, I have referenced this design from the Human Interface Guidelines of Apple, <a href="https://developer.apple.com/design/human-interface-guidelines/macos/visual-design/dark-mode/" target="blank">Visual Design Chapter</a>. The design of the red circle button for closing the pop-up window also retrieved from the Human Interface Guidelines of Apple, <a href="https://developer.apple.com/design/human-interface-guidelines/macos/windows-and-views/window-anatomy/" target="blank">Windows and Views Chapter</a>.
+                    <br><br><br>
+                    <h2>Cards Design</h2>
+                    We know that after we click the "Get Start It" button in the landing page, four rectangular cards will appear and when we let the pointer on the card, the corresponding animation will also appear. This design idea I have referenced from the CSS Card Designs of the <a href="https://freefrontend.com/css-cards/" target="blank">freefrontend.com website</a>. 
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards Design -->
+        <div class="card-container">
+            <div class="card first-card">
+                <h1 class="title">About Me</h1>
+                <div class="select">
+                    <a onclick="firstPopUp()">View</a>
+                    <a class="switch">Quit</a>
+                </div>
+            </div>
+            <div class="card second-card">
+                <h1 class="title">Domuncation & Reflection</h1>
+                <div class="select">
+                    <a onclick="secondPopUp()">View</a>
+                    <a class="switch">Quit</a>
+                </div>
+            </div>
+            <div class="card third-card">
+                <h1 class="title">Course Reflection</h1>
+                <div class="select">
+                    <a onclick="thirdPopUp()">View</a>
+                    <a class="switch">Quit</a>
+                </div>
+            </div>
+            <div class="card forth-card">
+                <h1 class="title">Other Work</h1>
+                <div class="select">
+                    <a onclick="forthPopUp()">View</a>
+                    <a class="switch">Quit</a>
+                </div>
+            </div>
+        </div>
+    </article>
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
